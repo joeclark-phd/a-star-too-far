@@ -37,9 +37,8 @@ public class App extends Application {
         Scene scene = new Scene(root);
 
         Parent menu = FXMLLoader.load(getClass().getResource("/scenes/mainmenu.fxml"));
-        Scene mainmenu = new Scene(menu);
 
-        scene.setOnKeyReleased(keyEvent -> stage.setScene(mainmenu));
+        scene.setOnKeyReleased(keyEvent -> scene.setRoot(menu));
 
         stage.setScene(scene);
         stage.show();
