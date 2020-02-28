@@ -1,0 +1,13 @@
+.root {
+    -fx-background-color: black;
+}
+
+.gamename {
+    -fx-font-family: Century Gothic;
+    -fx-font-size: 3em;
+    -fx-text-fill: red;
+}
+
+.regulartext {
+    -fx-text-fill: red;
+}
