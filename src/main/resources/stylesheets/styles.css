@@ -1,5 +1,7 @@
+/* parent element of splashpage and mainmenu */
 .root {
     -fx-background-color: black;
+    -fx-alignment: center;
 }
 
 .gamename {
@@ -8,6 +10,15 @@
     -fx-text-fill: red;
 }
 
+/* can we replace this with a "universal" font color setting? */
 .regulartext {
+    -fx-text-fill: red;
+}
+
+.menuheader {
+    -fx-text-fill: red;
+}
+
+.menuchoice {
     -fx-text-fill: red;
 }

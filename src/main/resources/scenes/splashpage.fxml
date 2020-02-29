@@ -3,8 +3,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
-           prefHeight="400.0" prefWidth="600.0" styleClass="root" stylesheets="@../stylesheets/styles.css"
-           xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1">
-    <Label text="A Star Too Far" styleClass="gamename"/>
-</StackPane>
+<VBox styleClass="root" stylesheets="@../stylesheets/styles.css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1">
+    <Label styleClass="gamename" text="A Star Too Far" />
+    <Label styleClass="regulartext" text="Press any key to continue" />
+</VBox>

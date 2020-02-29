@@ -4,8 +4,10 @@
 <?import javafx.scene.layout.*?>
 
 
-<StackPane stylesheets="@../stylesheets/styles.css" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
-           minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal"
-           xmlns:fx="http://javafx.com/fxml/1">
-    <Label text="MAIN MENU (coming soon)" styleClass="regulartext"/>
-</StackPane>
+<VBox styleClass="root" stylesheets="@../stylesheets/styles.css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1">
+    <Label text="MAIN MENU" styleClass="menuheader"/>
+    <Label text="Start New Game" styleClass="menuchoice"/>
+    <Label text="Load Saved Game" styleClass="menuchoice"/>
+    <Label text="Credits" styleClass="menuchoice"/>
+    <Label text="Quit" styleClass="menuchoice"/>
+</VBox>
