@@ -21,7 +21,6 @@ public class App extends Application {
         stage.setTitle("A Star Too Far");
         stage.setHeight(480);
         stage.setWidth(640);
-        stage.setMaximized(true);
 
         // UI root nodes
         Parent splashpage = FXMLLoader.load(getClass().getResource("/scenes/splashpage.fxml"));
