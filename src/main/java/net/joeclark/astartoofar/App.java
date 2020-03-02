@@ -17,6 +17,7 @@ public class App extends Application {
 
     @Override
     public void start(Stage stage) throws IOException {
+
         stage.initStyle(StageStyle.UNDECORATED);
         stage.setTitle("A Star Too Far");
         stage.setHeight(480);
@@ -25,8 +26,9 @@ public class App extends Application {
         // UI root nodes
         Parent splashpage = FXMLLoader.load(getClass().getResource("/scenes/splashpage.fxml"));
         Parent mainmenu = FXMLLoader.load(getClass().getResource("/scenes/mainmenu.fxml"));
+        Parent windowparent = FXMLLoader.load(getClass().getResource("/scenes/windowparent.fxml"));
 
-        Scene scene = new Scene(splashpage);
+        Scene scene = new Scene(windowparent);
 
         scene.setOnKeyReleased(keyEvent -> scene.setRoot(mainmenu));
 

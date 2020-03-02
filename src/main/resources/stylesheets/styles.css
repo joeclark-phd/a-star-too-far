@@ -4,6 +4,13 @@
     -fx-alignment: center;
 }
 
+.parent {
+    -fx-background-color: black;
+}
+.windowhandle {
+    -fx-background-color: #004c83;
+}
+
 .gamename {
     -fx-font-family: Century Gothic;
     -fx-font-size: 3em;
