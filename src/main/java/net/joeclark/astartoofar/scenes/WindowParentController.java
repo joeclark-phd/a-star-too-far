@@ -5,6 +5,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.HBox;
+import javafx.scene.shape.Rectangle;
 import javafx.stage.Stage;
 import net.joeclark.astartoofar.App;
 
@@ -15,6 +16,8 @@ public class WindowParentController implements Initializable {
 
     @FXML
     private HBox windowhandle;
+    @FXML
+    private Rectangle closebutton;
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
@@ -41,5 +44,10 @@ public class WindowParentController implements Initializable {
     public void handleDragDone(MouseEvent event) {
         Stage stage = (Stage) ((Node)event.getSource()).getScene().getWindow();
         stage.setOpacity(1.0f);
+    }
+
+    /** Fires when the window's "close" icon has been clicked */
+    public void quitGame(MouseEvent event) {
+        System.exit(1);
     }
 }

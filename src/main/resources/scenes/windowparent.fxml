@@ -1,10 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.shape.Rectangle?>
 
-
-<BorderPane prefHeight="480.0" prefWidth="640.0" stylesheets="@../stylesheets/styles.css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="net.joeclark.astartoofar.scenes.WindowParentController">
+<BorderPane prefHeight="480.0" prefWidth="640.0" styleClass="parent" stylesheets="@../stylesheets/styles.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="net.joeclark.astartoofar.scenes.WindowParentController">
    <top>
-      <HBox id="windowhandle" fx:id="windowhandle" onDragDone="#handleDragDone" onMouseDragged="#handleDragged" onMousePressed="#handlePressed" onMouseReleased="#handleReleased" prefHeight="35.0" prefWidth="640.0" styleClass="windowhandle" BorderPane.alignment="CENTER" />
+      <HBox id="windowhandle" fx:id="windowhandle" alignment="CENTER_RIGHT" onDragDone="#handleDragDone" onMouseDragged="#handleDragged" onMousePressed="#handlePressed" onMouseReleased="#handleReleased" prefHeight="35.0" prefWidth="640.0" styleClass="windowhandle">
+         <children>
+            <Rectangle fx:id="closebutton" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="20.0" onMouseClicked="#quitGame" stroke="BLACK" strokeType="INSIDE" styleClass="button-close" width="20.0">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Rectangle>
+         </children>
+         <padding>
+            <Insets right="7.0" />
+         </padding>
+      </HBox>
    </top>
 </BorderPane>

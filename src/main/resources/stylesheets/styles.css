@@ -10,6 +10,10 @@
 .windowhandle {
     -fx-background-color: #004c83;
 }
+.button-close:hover {
+    -fx-fill: #66aadd;
+}
+
 
 .gamename {
     -fx-font-family: Century Gothic;
